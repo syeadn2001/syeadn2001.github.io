@@ -127,9 +127,6 @@ Cartoon.carMaker = function () {
 
 }
 
-
-
-
 Cartoon.mainLoop = function () {
     Cartoon.drawBackground();
     Cartoon.drawTitle();

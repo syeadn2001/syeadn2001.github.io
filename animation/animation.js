@@ -7,7 +7,7 @@ canvas.width = window.innerWidth;
 //loading the images 
 const images = {};
 images.player = new Image()
-images.player.src = '/Users/adnaan.syed2001/Documents/miscProgramming/syeadn2001.github.io/animation/assets/cupheadSpriteSheet.png';
+images.player.src = 'assets/cupheadSpriteSheet.png';
 const characterActions = ['up', 'top right', 'right', 'down right', 'down', 'jump'];
 const characters = [];
 

@@ -10,7 +10,7 @@ var fruit = [
 var canvas = document.getElementById("mycanvas");
 var ctx = canvas.getContext("2d");
 ctx.fillStyle = "black";
-ctx.fillRect(0, 100, 900, 600);
+ctx.fillRect(0, 20, 800, 600);
 
 var chart = function () {
 
@@ -18,14 +18,14 @@ var chart = function () {
     for (var i = 0; i < fruit.length; i++) {
 
         ctx.fillStyle = fruit[i].color;
-        ctx.fillRect(x, canvas.height-20 * fruit[i].quantity, 120, 600);
+        ctx.fillRect(x, canvas.height - 15 * fruit[i].quantity, 120, 400);
 
-        ctx.fillStyle = "white";
+        ctx.fillStyle = "black";
         ctx.font = "bold 20px script center";
 
         ctx.textAlign = "center";
-        ctx.fillText(fruit[i].name, x + 55, 650);
-        ctx.fillText(fruit[i].quantity, x + 55, 630);
+        ctx.fillText(fruit[i].name, x + 55, 540);
+        ctx.fillText(fruit[i].quantity, x + 55, 510);
         ctx.stroke();
         x = x + 150;
     }

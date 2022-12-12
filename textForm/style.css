@@ -1,0 +1,14 @@
+body {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+#slider_value {
+    color: red;
+}

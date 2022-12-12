@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>textForm</title>
+</head>
+
+<body>
+    <h1>Text Manipulator Form!</h1>
+
+    <form>
+        <label for="name">Please put your name:</label>
+        <input type="text" id="name" name="name" onchange="change();">
+
+        <br>
+        <br>
+
+        <label for="tcolor">Please pick <b>text</b> color</label>
+        <input type="color" id='tcolor' name='tcolor' value='#000000' onchange='change()'>
+
+        <br>
+        <br>
+
+        <label for="bcolor">Please pick <b>background</b> color:</label>
+        <input type="color" id="bcolor" name="bcolor" value="#ffffff" onchange='change()'>
+
+        <br>
+        <br>
+
+        <label for="tsize">Please pick desired <b>text size</b>: </label>
+        <input type="range" id='tsize' name='tsize' min='12' max='48' value='12' onchange='callBoth(this.value)'>
+        <span id='slider_value'>12</span>
+
+        <br>
+        <br>
+
+        <div id=fontType>
+            <input type="radio" id="tnr" name="font" onchange="changeFont('Times New Roman');">
+            <label for="tnr"><b>Times New Roman</b></label>
+            <input type="radio" id="courier" name="font" onchange="changeFont('Courier');">
+            <label for="courier"><b>Courier</b></label>
+            <input type="radio" id="tms" name="font" onchange="changeFont('Trebuchet MS');">
+            <label for="tms"><b>Trebuchet MS</b></label>
+
+        </div>
+
+        <br>
+        <br>
+
+        <label for="reset"> Reset Settings:</label>
+        <button class="btn" id="reset"><a href="../textform/index.html">Reset</a></button>
+
+        <br>
+        <br>
+
+        <button class="btn"><a href="../index.html">Home</a></button>
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>

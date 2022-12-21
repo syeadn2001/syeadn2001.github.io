@@ -19,7 +19,7 @@ class Character {
         this.frameY = 3;
         this.x = 0;
         this.y = 0;
-        this.speed = (Math.random() * 1.5) + 5.5;
+        this.speed = (Math.random() * 1.5) + 7.5;
         this.action = 'right';
     }
     draw() {

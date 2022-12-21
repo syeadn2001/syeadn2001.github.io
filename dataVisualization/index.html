@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <title>Data Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Data Visualization of NYPD Reported Hate Crimes</h1>
+
+    <p id='Summary'>I was interested in looking into the hate crimes committed throughout New York. The original data
+        had too much
+        information (14 columns and 1908 rows), so I decided to run a SQL query that would group hate crimes based off
+        the group that was targeted, and then visualize that.
+    </p>
+
+    <img src="assets/hateCrimeQuery.png" alt="">
+
+    <h2>Data Visualization - Barchart</h2>
+
+    <div id="barGraph">
+        <canvas id="barChart" width="800" height="450"></canvas>
+    </div>
+
+    <h2>Data Visualization - Pie Chart</h2>
+    <div id="pieGraph">
+        <canvas id="pieChart" width="800" height="450"></canvas>
+
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

@@ -16,3 +16,9 @@
     padding-right: 30%;
     padding-top: 10px;
 }
+
+button {
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+}

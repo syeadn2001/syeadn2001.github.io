@@ -26,13 +26,14 @@ function create() {
 
     this.add.image(400, 300, 'space');
 
+    //below are sprites
     var mario = this.add.sprite(100, 660, 'mario');
     var yoshi = this.add.sprite(300, 700, 'yoshi');
     var toad = this.add.sprite(600, 690, 'toad');
 
-    this.mario.scale.setTo(0.3, 0.3);
-    this.yoshi.scale.setTo(0.3, 0.3);
-    this.toad.scale.setTo(0.3, 0.3);
+    mario.scale.setTo(0.3, 0.3);
+    yoshi.scale.setTo(0.3, 0.3);
+    toad.scale.setTo(0.3, 0.3);
 
 
     mario.setInteractive();

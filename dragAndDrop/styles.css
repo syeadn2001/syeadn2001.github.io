@@ -1,0 +1,9 @@
+#buttons {
+    text-align: center;
+}
+
+button {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: burlywood;
+}

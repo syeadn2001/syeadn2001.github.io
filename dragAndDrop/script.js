@@ -31,10 +31,9 @@ function create() {
     var yoshi = this.add.sprite(300, 700, 'yoshi');
     var toad = this.add.sprite(600, 690, 'toad');
 
-    mario.scale.setTo(0.3, 0.3);
-    yoshi.scale.setTo(0.3, 0.3);
-    toad.scale.setTo(0.3, 0.3);
-
+    mario.setScale(0.3)
+    yoshi.setScale(0.3)
+    toad.setScale(0.3)
 
     mario.setInteractive();
     yoshi.setInteractive();
@@ -49,8 +48,17 @@ function create() {
         gameObject.y = dragY;
 
     });
-}
 
-function changeToSpace() {
+    function changeToSpace() {
+        background.destroy()
+        background = this.add.image(400, 300, 'space');
+    }
+
+    document.querySelector('#forest').addEventListener('click',
+        function () {
+            console.log('The button was clicked!')
+        }
+    );
+
 
 }

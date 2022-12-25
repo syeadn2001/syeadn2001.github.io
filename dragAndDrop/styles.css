@@ -7,3 +7,9 @@ button {
     padding-right: 10px;
     background-color: burlywood;
 }
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+    margin-top: auto;
+}

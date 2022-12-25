@@ -28,8 +28,8 @@ function create() {
 
     //below are sprites
     var mario = this.add.sprite(100, 660, 'mario');
-    var yoshi = this.add.sprite(300, 700, 'yoshi');
-    var toad = this.add.sprite(600, 690, 'toad');
+    var yoshi = this.add.sprite(300, 650, 'yoshi');
+    var toad = this.add.sprite(600, 650, 'toad');
 
     mario.setScale(0.3)
     yoshi.setScale(0.3)
@@ -57,6 +57,7 @@ function create() {
     document.querySelector('#forest').addEventListener('click',
         function () {
             console.log('The button was clicked!')
+            this.add.image(400, 300, 'forest');
         }
     );
 

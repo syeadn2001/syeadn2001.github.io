@@ -29,6 +29,13 @@ function create() {
     var seagull = this.add.sprite(300, 800, 'seagull');
     var castle = this.add.sprite(600, 850, 'castle');
 
+    crab.scale.setTo(0.3, 0.3);
+    
+
+
+
+
+
     crab.setInteractive();
     seagull.setInteractive();
     castle.setInteractive();

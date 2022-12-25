@@ -13,7 +13,7 @@ var config = {
 var game = new Phaser.Game(config);
 
 function preload() {
-    this.load.image('forest', 'assets/foresBackground.jpeg');
+    this.load.image('forest', 'assets/forestBackground.jpeg');
     this.load.image('city', 'assets/cityBackground.jpeg');
     this.load.image('space', 'assets/spaceBackground.jpeg');
     this.load.image('mario', 'assets/mario.png');
@@ -24,11 +24,16 @@ function preload() {
 
 function create() {
 
-    this.add.image(400, 300, 'forest');
+    this.add.image(400, 300, 'space');
 
     var mario = this.add.sprite(100, 660, 'mario');
     var yoshi = this.add.sprite(300, 700, 'yoshi');
     var toad = this.add.sprite(600, 690, 'toad');
+
+    mario.scale.setTo(0.3, 0.3);
+    yoshi.scale.setTo(0.3, 0.3);
+    toad.scale.setTo(0.3, 0.3);
+
 
     mario.setInteractive();
     yoshi.setInteractive();
